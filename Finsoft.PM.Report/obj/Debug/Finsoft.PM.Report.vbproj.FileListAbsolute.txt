@@ -1,0 +1,11 @@
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Report\bin\Debug\Finsoft.PM.Report.dll
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Report\bin\Debug\Finsoft.PM.Report.pdb
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Report\bin\Debug\Finsoft.PM.Report.xml
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Report\obj\Debug\Finsoft.PM.Report.Resources.resources
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Report\obj\Debug\Finsoft.PM.Report.vbproj.GenerateResource.Cache
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Report\obj\Debug\Finsoft.PM.Report.dll.licenses
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Report\obj\Debug\Finsoft.PM.Report.dll
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Report\obj\Debug\Finsoft.PM.Report.xml
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Report\obj\Debug\Finsoft.PM.Report.pdb
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Report\obj\Debug\Finsoft.PM.Report.InvoiceReport.resources
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Report\obj\Debug\Finsoft.PM.Report.ReceiptReport.resources

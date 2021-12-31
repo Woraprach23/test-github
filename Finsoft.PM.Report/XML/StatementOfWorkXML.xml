@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="XM" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Receipt">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="FSDMandays" type="xs:int" minOccurs="0" />
+              <xs:element name="DevMandays" type="xs:int" minOccurs="0" />
+              <xs:element name="TestSupportMandays" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalMandays" type="xs:int" minOccurs="0" />
+              <xs:element name="ReceiptNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceiptDate" type="xs:date" minOccurs="0" /> 
+              <xs:element name="ClientName" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientAddress1" type="xs:string" minOccurs="0" /> 
+	            <xs:element name="IsHeadOffice" type="xs:boolean" minOccurs="0" />
+              <xs:element name="IsHeadOfficeText" type="xs:string" minOccurs="0" />
+              <xs:element name="ClientTaxID" type="xs:string" minOccurs="0" />
+	            <xs:element name="ReferenceNo" type="xs:string" minOccurs="0" />
+              <xs:element name="PaymentType" type="xs:string" minOccurs="0" />
+              <xs:element name="PaymentDueDate" type="xs:date" minOccurs="0" />
+              <xs:element name="InvoiceDetail" type="xs:string" minOccurs="0" />
+              <xs:element name="Amount" type="xs:decimal" minOccurs="0" />
+              <xs:element name="VATPercent" type="xs:decimal" minOccurs="0" /> 
+              <xs:element name="NetAmountTH" type="xs:string" minOccurs="0" />
+              <xs:element name="InvoiceNo" type="xs:string" minOccurs="0" />
+              <xs:element name="ReceiptDate2" type="xs:date" minOccurs="0" />
+	            <xs:element name="AuthorizedName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

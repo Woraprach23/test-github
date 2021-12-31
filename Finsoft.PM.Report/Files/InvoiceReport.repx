@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="14.2.7.0" Ref="1" Name="InvoiceReport" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" DataSource="#Ref-0" DataMember="Invoice" Version="14.2" ScriptLanguage="VisualBasic" PageHeight="1169" PaperKind="A4" PageWidth="827" Margins="51, 55, 94, 56">
+  <Bands>
+    <Item1 Ref="2" ControlType="DetailBand" Name="Detail" TextAlignment="TopLeft" Padding="0,0,0,0,100" HeightF="30">
+      <Controls>
+        <Item1 Ref="3" Name="XrTable2" ControlType="XRTable" SizeF="720.9999,30" LocationFloat="0, 0" Font="Cordia New, 14pt, style=Bold" Padding="5,0,0,0,100" Borders="All" TextAlignment="MiddleCenter">
+          <Rows>
+            <Item1 Ref="4" Name="XrTableRow2" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="5" Name="XrTableCell2" ControlType="XRTableCell" Weight="0.50589458076335947">
+                  <Summary Ref="6" FormatString="{0:n0}" Running="Group" Func="RecordNumber" />
+                </Item1>
+                <Item2 Ref="7" Name="XrTableCell5" ControlType="XRTableCell" Text="xxxx" TextAlignment="MiddleLeft" Weight="4.4941051652761912">
+                  <StylePriority Ref="8" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="9" Name="XrTableCell6" ControlType="XRTableCell" Padding="0,5,0,0,100" Text=" " TextAlignment="MiddleRight" Weight="1.0000002539604496">
+                  <DataBindings>
+                    <Item1 Ref="10" FormatString="{0:n2}" PropertyName="Text" DataMember="Invoice.Amount" />
+                  </DataBindings>
+                  <StylePriority Ref="11" UsePadding="false" UseTextAlignment="false" />
+                </Item3>
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="12" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item1>
+    <Item2 Ref="13" Name="TopMargin" ControlType="TopMarginBand" Padding="0,0,0,0,100" TextAlignment="TopLeft" HeightF="94.11456" />
+    <Item3 Ref="14" Name="BottomMargin" ControlType="BottomMarginBand" Padding="0,0,0,0,100" TextAlignment="TopLeft" HeightF="56" />
+    <Item4 Ref="15" Name="ReportHeader" ControlType="ReportHeaderBand" HeightF="457.0833">
+      <Controls>
+        <Item1 Ref="16" Name="XrTable3" ControlType="XRTable" SizeF="720.2499,377.0833" LocationFloat="0, 80" Font="Cordia New, 14pt, style=Bold" Padding="5,0,0,0,100" Borders="None" TextAlignment="MiddleLeft">
+          <Rows>
+            <Item1 Ref="17" Name="XrTableRow11" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="18" Name="XrTableCell66" ControlType="XRTableCell" Weight="5.9937586679876" />
+              </Cells>
+            </Item1>
+            <Item2 Ref="19" Name="XrTableRow10" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="20" Name="XrTableCell60" ControlType="XRTableCell" Font="Cordia New, 14pt" Text="ที่อยู่ สำนักงานใหญ่ อาคารจี.พี.เฮ้าส์ ชั้น 4 เลขที่ 466/31 ถนนสวนพลู แขวงทุ่งมหาเมฆ เขตสาทร กรุงเทพฯ 10120 " TextAlignment="MiddleCenter" Weight="5.9937586679876">
+                  <DataBindings>
+                    <Item1 Ref="21" FormatString="ที่อยู่ {0}" PropertyName="Text" DataMember="Invoice.CompanyAddress1" />
+                  </DataBindings>
+                  <StylePriority Ref="22" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+              </Cells>
+            </Item2>
+            <Item3 Ref="23" Name="XrTableRow9" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="24" Name="XrTableCell54" ControlType="XRTableCell" Font="Cordia New, 14pt" Text="โทรศัพท์ 02-679-4450" TextAlignment="MiddleCenter" Weight="5.9937586679876">
+                  <DataBindings>
+                    <Item1 Ref="25" FormatString="โทรศัพท์ {0}" PropertyName="Text" DataMember="Invoice.CompanyAddress2" />
+                  </DataBindings>
+                  <StylePriority Ref="26" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+              </Cells>
+            </Item3>
+            <Item4 Ref="27" Name="XrTableRow8" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="28" Name="XrTableCell48" ControlType="XRTableCell" Font="Cordia New, 14pt" Text="เลขประจำตัวผู้เสียภาษีอากร 0105552063707" TextAlignment="MiddleCenter" Weight="5.9937586679876">
+                  <DataBindings>
+                    <Item1 Ref="29" FormatString="เลขประจำตัวผู้เสียภาษีอากร {0}" PropertyName="Text" DataMember="Invoice.TaxID" />
+                  </DataBindings>
+                  <StylePriority Ref="30" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+              </Cells>
+            </Item4>
+            <Item5 Ref="31" Name="XrTableRow7" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="32" Name="XrTableCell42" ControlType="XRTableCell" Font="Cordia New, 18pt, style=Bold" Text="ต้นฉบับใบแจ้งหนี้ / INVOICE" TextAlignment="MiddleCenter" Weight="5.9937586679876">
+                  <StylePriority Ref="33" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+              </Cells>
+            </Item5>
+            <Item6 Ref="34" Name="XrTableRow6" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="35" Name="XrTableCell35" ControlType="XRTableCell" Padding="5,5,0,0,100" Borders="None" Text="เลขที่" TextAlignment="MiddleRight" Weight="5">
+                  <StylePriority Ref="36" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="37" Name="XrTableCell36" ControlType="XRTableCell" Borders="None" Text="033/63" TextAlignment="MiddleCenter" Weight="0.9937586679875996">
+                  <DataBindings>
+                    <Item1 Ref="38" PropertyName="Text" DataMember="Invoice.InvoiceNo" />
+                  </DataBindings>
+                  <StylePriority Ref="39" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+              </Cells>
+            </Item6>
+            <Item7 Ref="40" Name="XrTableRow5" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="41" Name="XrTableCell29" ControlType="XRTableCell" Padding="5,5,0,0,100" Borders="None" Text="วันที่" TextAlignment="MiddleRight" Weight="5">
+                  <StylePriority Ref="42" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="43" Name="XrTableCell30" ControlType="XRTableCell" Borders="None" Text="11/6/2020" TextAlignment="MiddleCenter" Weight="0.9937586679875996">
+                  <DataBindings>
+                    <Item1 Ref="44" PropertyName="Text" DataMember="Invoice.InvoiceDate" />
+                  </DataBindings>
+                  <StylePriority Ref="45" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+              </Cells>
+            </Item7>
+            <Item8 Ref="46" Name="XrTableRow4" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="47" Name="XrTableCell19" ControlType="XRTableCell" Borders="Left, Top" Text="ชื่อลูกค้า  " Weight="0.50589458076335947">
+                  <StylePriority Ref="48" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="49" Name="XrTableCell24" ControlType="XRTableCell" Borders="Top, Right" Text="ธนาคารกรุงศรีอยุธยา จำกัด (มหาชน) " Weight="5.48786408722424">
+                  <DataBindings>
+                    <Item1 Ref="50" PropertyName="Text" DataMember="Invoice.CompanyName" />
+                  </DataBindings>
+                  <StylePriority Ref="51" UseBorders="false" />
+                </Item2>
+              </Cells>
+            </Item8>
+            <Item9 Ref="52" Name="XrTableRow1" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="53" Name="XrTableCell1" ControlType="XRTableCell" Borders="Left" Text="ที่อยู่       " Weight="0.50589458076335947">
+                  <StylePriority Ref="54" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="55" Name="XrTableCell4" ControlType="XRTableCell" Borders="Right" Text="1222 ถนนพระรามที่ 3 แขวงบางโพงพาง " Weight="5.48786408722424">
+                  <DataBindings>
+                    <Item1 Ref="56" PropertyName="Text" DataMember="Invoice.ClientAddress1" />
+                  </DataBindings>
+                  <StylePriority Ref="57" UseBorders="false" />
+                </Item2>
+              </Cells>
+            </Item9>
+            <Item10 Ref="58" Name="XrTableRow14" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="59" Name="XrTableCell25" ControlType="XRTableCell" Borders="Left, Bottom" Weight="0.50589458076335947">
+                  <StylePriority Ref="60" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="61" Name="XrTableCell26" ControlType="XRTableCell" Borders="Right, Bottom" Text="เขตยานนาวา กรุงเทพมหานคร 10120 " Weight="5.48786408722424">
+                  <DataBindings>
+                    <Item1 Ref="62" PropertyName="Text" DataMember="Invoice.ClientAddress2" />
+                  </DataBindings>
+                  <StylePriority Ref="63" UseBorders="false" />
+                </Item2>
+              </Cells>
+            </Item10>
+            <Item11 Ref="64" Name="XrTableRow15" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="65" Name="XrTableCell37" ControlType="XRTableCell" Weight="0.50589458076335947" />
+                <Item2 Ref="66" Name="XrTableCell38" ControlType="XRTableCell" Weight="1.4941054192366405" />
+                <Item3 Ref="67" Name="XrTableCell39" ControlType="XRTableCell" Weight="1" />
+                <Item4 Ref="68" Name="XrTableCell40" ControlType="XRTableCell" Weight="0.91331517177503874" />
+                <Item5 Ref="69" Name="XrTableCell41" ControlType="XRTableCell" Weight="1.0866848282249613" />
+                <Item6 Ref="70" Name="XrTableCell43" ControlType="XRTableCell" Weight="0.9937586679875996" />
+              </Cells>
+            </Item11>
+            <Item12 Ref="71" Name="XrTableRow3" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="72" Name="XrTableCell3" ControlType="XRTableCell" Borders="Left, Top, Bottom" Text="อ้างอิง" Weight="0.50589458076335947">
+                  <StylePriority Ref="73" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="74" Name="XrTableCell14" ControlType="XRTableCell" Borders="Top, Bottom" Text="PO#210020024245" Weight="1.4941054192366405">
+                  <StylePriority Ref="75" UseBorders="false" />
+                </Item2>
+                <Item3 Ref="76" Name="XrTableCell15" ControlType="XRTableCell" Borders="Top, Bottom" Text="เงื่อนไขการรับชำระ" Weight="1">
+                  <StylePriority Ref="77" UseBorders="false" />
+                </Item3>
+                <Item4 Ref="78" Name="XrTableCell16" ControlType="XRTableCell" Borders="Top, Bottom" Text="เช็ค/เงินโอน" Weight="0.91331517177503874">
+                  <StylePriority Ref="79" UseBorders="false" />
+                </Item4>
+                <Item5 Ref="80" Name="XrTableCell17" ControlType="XRTableCell" Borders="Top, Bottom" Text="วันครบกำหนดชำระ " Weight="1.0866848282249613">
+                  <StylePriority Ref="81" UseBorders="false" />
+                </Item5>
+                <Item6 Ref="82" Name="XrTableCell18" ControlType="XRTableCell" Borders="Top, Right, Bottom" Text=" " Weight="0.9937586679875996">
+                  <StylePriority Ref="83" UseBorders="false" />
+                </Item6>
+              </Cells>
+            </Item12>
+          </Rows>
+          <StylePriority Ref="84" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+        </Item1>
+        <Item2 Ref="85" Name="XrTable5" ControlType="XRTable" SizeF="719.5,80" LocationFloat="0.7499624, 0">
+          <Rows>
+            <Item1 Ref="86" Name="XrTableRow27" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="87" Name="XrTableCell9" ControlType="XRTableCell" Font="Cordia New, 14pt, style=Bold" Text="XrTableCell9" TextAlignment="MiddleCenter" Weight="0.75623012154342484">
+                  <Controls>
+                    <Item1 Ref="88" Name="XrPictureBox1" ControlType="XRPictureBox" SizeF="152.0833,84.11456" LocationFloat="3.565138E-05, 0" Padding="10,0,0,0,100" ImageUrl="D:\SourceControl\FinsoftPM\FinsoftPM\packages\finsoft-logo.bmp">
+                      <StylePriority Ref="89" UsePadding="false" />
+                    </Item1>
+                  </Controls>
+                  <StylePriority Ref="90" UseFont="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="91" Name="XrTableCell28" ControlType="XRTableCell" Font="Cordia New, 14pt, style=Bold" Text="บริษัท ฟินซอฟท์ จำกัด " TextAlignment="MiddleCenter" Weight="2.05920654794573">
+                  <DataBindings>
+                    <Item1 Ref="92" PropertyName="Text" DataMember="Invoice.CompanyName" />
+                  </DataBindings>
+                  <StylePriority Ref="93" UseFont="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="94" Name="XrTableCell20" ControlType="XRTableCell" Font="Cordia New, 14pt, style=Bold" Text=" " TextAlignment="MiddleCenter" Weight="0.76225614821737009">
+                  <StylePriority Ref="95" UseFont="false" UseTextAlignment="false" />
+                </Item3>
+              </Cells>
+            </Item1>
+          </Rows>
+        </Item2>
+      </Controls>
+    </Item4>
+    <Item5 Ref="96" ControlType="GroupHeaderBand" Name="GroupHeader1" HeightF="30.0000038">
+      <Controls>
+        <Item1 Ref="97" Name="XrTable1" ControlType="XRTable" SizeF="720.9999,30.0000038" LocationFloat="0, 0" Font="Cordia New, 14pt, style=Bold" Padding="5,0,0,0,100" Borders="All" TextAlignment="MiddleCenter">
+          <Rows>
+            <Item1 Ref="98" Name="XrTableRow28" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="99" Name="XrTableCell71" ControlType="XRTableCell" Text="ลำดับ" Weight="0.50589458076335947" />
+                <Item2 Ref="100" Name="XrTableCell72" ControlType="XRTableCell" Text="รายการ" Weight="4.4941051652761912" />
+                <Item3 Ref="101" Name="XrTableCell76" ControlType="XRTableCell" Text="จำนวนเงิน (บาท)" Weight="1.0000002539604496" />
+              </Cells>
+            </Item1>
+          </Rows>
+          <StylePriority Ref="102" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item5>
+    <Item6 Ref="103" ControlType="GroupFooterBand" Name="GroupFooter1" HeightF="460.4166">
+      <Controls>
+        <Item1 Ref="104" Name="XrTable4" ControlType="XRTable" SizeF="720.9999,384.027679" LocationFloat="0, 0" Font="Cordia New, 14pt, style=Bold" Padding="5,5,5,5,100" Borders="None" TextAlignment="MiddleLeft">
+          <Rows>
+            <Item1 Ref="105" Name="XrTableRow18" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="106" Name="XrTableCell45" ControlType="XRTableCell" Padding="5,5,0,0,100" Borders="All" Text="รวมเงิน" TextAlignment="MiddleRight" Weight="5">
+                  <StylePriority Ref="107" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="108" Name="XrTableCell46" ControlType="XRTableCell" Borders="Top, Right, Bottom" TextAlignment="MiddleRight" Weight="0.99999999999999989">
+                  <DataBindings>
+                    <Item1 Ref="109" PropertyName="Text" DataMember="Invoice.Amount" />
+                  </DataBindings>
+                  <StylePriority Ref="110" UseBorders="false" UseTextAlignment="false" />
+                  <Summary Ref="111" FormatString="{0:n2}" Running="Group" />
+                </Item2>
+              </Cells>
+            </Item1>
+            <Item2 Ref="112" Name="XrTableRow17" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="113" Name="XrTableCell23" ControlType="XRTableCell" Padding="5,5,0,0,100" Borders="Left, Right, Bottom" Text="ภาษีมูลค่าเพิ่ม 7%" TextAlignment="MiddleRight" Weight="5">
+                  <StylePriority Ref="114" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="115" Name="XrTableCell27" ControlType="XRTableCell" Borders="Right, Bottom" TextAlignment="MiddleRight" Weight="1">
+                  <DataBindings>
+                    <Item1 Ref="116" FormatString="{0:n2}" PropertyName="Text" DataMember="Invoice.Cal_VATAmount" />
+                  </DataBindings>
+                  <StylePriority Ref="117" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+              </Cells>
+            </Item2>
+            <Item3 Ref="118" Name="XrTableRow16" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="119" Name="XrTableCell11" ControlType="XRTableCell" Padding="5,5,0,0,100" Borders="Left, Right, Bottom" Text="รวมสุทธิ" TextAlignment="MiddleRight" Weight="5">
+                  <StylePriority Ref="120" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="121" Name="XrTableCell12" ControlType="XRTableCell" Borders="Right, Bottom" TextAlignment="MiddleRight" Weight="1">
+                  <DataBindings>
+                    <Item1 Ref="122" FormatString="{0:n2}" PropertyName="Text" DataMember="Invoice.Cal_NetAmount" />
+                  </DataBindings>
+                  <StylePriority Ref="123" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+              </Cells>
+            </Item3>
+            <Item4 Ref="124" Name="XrTableRow20" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="125" Name="XrTableCell13" ControlType="XRTableCell" Weight="6" />
+              </Cells>
+            </Item4>
+            <Item5 Ref="126" Name="XrTableRow29" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="127" Name="XrTableCell69" ControlType="XRTableCell" Weight="1.0263520790853158" />
+                <Item2 Ref="128" Name="XrTableCell73" ControlType="XRTableCell" Borders="All" Text="(สี่หมื่นแปดพันบาทถ้วน)" TextAlignment="MiddleCenter" Weight="3.9736476669542347">
+                  <DataBindings>
+                    <Item1 Ref="131" Parameter="#Ref-129" PropertyName="Text" DataMember="NetAmountThai" />
+                  </DataBindings>
+                  <StylePriority Ref="132" UseBorders="false" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="133" Name="XrTableCell74" ControlType="XRTableCell" Weight="1.00000025396045" />
+              </Cells>
+            </Item5>
+            <Item6 Ref="134" Name="XrTableRow21" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="135" Name="XrTableCell21" ControlType="XRTableCell" Weight="6" />
+              </Cells>
+            </Item6>
+            <Item7 Ref="136" Name="XrTableRow22" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="137" Name="XrTableCell7" ControlType="XRTableCell" Text="หมายเหตุ" Weight="6" />
+              </Cells>
+            </Item7>
+            <Item8 Ref="138" Name="XrTableRow23" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="139" Name="XrTableCell8" ControlType="XRTableCell" Text=" " Weight="6" />
+              </Cells>
+            </Item8>
+            <Item9 Ref="140" Name="XrTableRow19" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="141" Name="XrTableCell49" ControlType="XRTableCell" Borders="Left, Top, Right" Weight="2">
+                  <StylePriority Ref="142" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="143" Name="XrTableCell56" ControlType="XRTableCell" Borders="Top" Weight="1.9133151717750387">
+                  <StylePriority Ref="144" UseBorders="false" />
+                </Item2>
+                <Item3 Ref="145" Name="XrTableCell62" ControlType="XRTableCell" Borders="Left, Top, Right" Weight="2.0866848282249615">
+                  <StylePriority Ref="146" UseBorders="false" />
+                </Item3>
+              </Cells>
+            </Item9>
+            <Item10 Ref="147" Name="XrTableRow25" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="148" Name="XrTableCell33" ControlType="XRTableCell" Borders="Left, Right" Text="......................................................." TextAlignment="MiddleCenter" Weight="2">
+                  <StylePriority Ref="149" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="150" Name="XrTableCell44" ControlType="XRTableCell" Text="..................................................." TextAlignment="MiddleCenter" Weight="1.9133151717750387">
+                  <StylePriority Ref="151" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="152" Name="XrTableCell57" ControlType="XRTableCell" Borders="Left, Right" Text="......................................................." TextAlignment="MiddleCenter" Weight="2.0866848282249615">
+                  <StylePriority Ref="153" UseBorders="false" UseTextAlignment="false" />
+                </Item3>
+              </Cells>
+            </Item10>
+            <Item11 Ref="154" Name="XrTableRow24" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="155" Name="XrTableCell10" ControlType="XRTableCell" Borders="Left, Right" Text=" " Weight="2">
+                  <StylePriority Ref="156" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="157" Name="XrTableCell22" ControlType="XRTableCell" Text=" " Weight="1.9133151717750387" />
+                <Item3 Ref="158" Name="XrTableCell31" ControlType="XRTableCell" Borders="Left, Right" Text="(กิตติพงษ์ จงประเสริฐ)" TextAlignment="MiddleCenter" Weight="2.0866848282249615">
+                  <DataBindings>
+                    <Item1 Ref="159" FormatString="( {0} )" PropertyName="Text" DataMember="Invoice.AuthorizedName" />
+                  </DataBindings>
+                  <StylePriority Ref="160" UseBorders="false" UseTextAlignment="false" />
+                </Item3>
+              </Cells>
+            </Item11>
+            <Item12 Ref="161" Name="XrTableRow30" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="162" Name="XrTableCell78" ControlType="XRTableCell" Borders="Left, Right" Text="ผู้รับใบแจ้งหนี้" TextAlignment="MiddleCenter" Weight="2">
+                  <StylePriority Ref="163" UseBorders="false" UseTextAlignment="false" />
+                </Item1>
+                <Item2 Ref="164" Name="XrTableCell80" ControlType="XRTableCell" Text="วันนัดชำระเงิน" TextAlignment="MiddleCenter" Weight="1.9133151717750387">
+                  <StylePriority Ref="165" UseTextAlignment="false" />
+                </Item2>
+                <Item3 Ref="166" Name="XrTableCell82" ControlType="XRTableCell" Borders="Left, Right" Text="ผู้มีอำนาจลงนาม" TextAlignment="MiddleCenter" Weight="2.0866848282249615">
+                  <StylePriority Ref="167" UseBorders="false" UseTextAlignment="false" />
+                </Item3>
+              </Cells>
+            </Item12>
+            <Item13 Ref="168" Name="XrTableRow26" ControlType="XRTableRow" Weight="1">
+              <Cells>
+                <Item1 Ref="169" Name="XrTableCell58" ControlType="XRTableCell" Borders="Left, Right, Bottom" Text=" " Weight="2">
+                  <StylePriority Ref="170" UseBorders="false" />
+                </Item1>
+                <Item2 Ref="171" Name="XrTableCell59" ControlType="XRTableCell" Borders="Bottom" Text=" " Weight="1.9133151717750387">
+                  <StylePriority Ref="172" UseBorders="false" />
+                </Item2>
+                <Item3 Ref="173" Name="XrTableCell63" ControlType="XRTableCell" Borders="Left, Right, Bottom" Text=" " Weight="2.0866848282249615">
+                  <StylePriority Ref="174" UseBorders="false" />
+                </Item3>
+              </Cells>
+            </Item13>
+          </Rows>
+          <StylePriority Ref="175" UseFont="false" UsePadding="false" UseBorders="false" UseTextAlignment="false" />
+        </Item1>
+      </Controls>
+    </Item6>
+  </Bands>
+  <CalculatedFields>
+    <Item1 Ref="176" Name="Cal_VATAmount" DisplayName="Cal_VATAmount" Expression="Sum([Amount])" DataMember="Invoice" />
+    <Item2 Ref="177" Name="Cal_NetAmount" DisplayName="Cal_NetAmount" Expression="Round(Sum([Amount]) * [VATPercent],2)" DataMember="Invoice" />
+  </CalculatedFields>
+  <Parameters>
+    <Item1 Ref="129" Visible="false" Description="Parameter1" Name="NetAmountThai" Value="#Ref-179" />
+  </Parameters>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v14.2" Name="SqlDataSource1" Base64="PFNxbERhdGFTb3VyY2U+PE5hbWU+U3FsRGF0YVNvdXJjZTE8L05hbWU+PENvbm5lY3Rpb24gTmFtZT0iSW52b2ljZVhNTENvbm5lY3Rpb24iIFByb3ZpZGVyS2V5PSJJbk1lbW9yeVNldEZ1bGwiPjxQYXJhbWV0ZXJzPjxQYXJhbWV0ZXIgTmFtZT0iZGF0YWJhc2UiIFZhbHVlPSJEOlxTb3VyY2VDb250cm9sXEZpbnNvZnRQTVxGaW5zb2Z0UE1cRmluc29mdC5QTS5SZXBvcnRcWE1MXEludm9pY2VYTUwueG1sIiAvPjxQYXJhbWV0ZXIgTmFtZT0icmVhZCBvbmx5IiBWYWx1ZT0iMSIgLz48UGFyYW1ldGVyIE5hbWU9ImdlbmVyYXRlQ29ubmVjdGlvbkhlbHBlciIgVmFsdWU9ImZhbHNlIiAvPjwvUGFyYW1ldGVycz48L0Nvbm5lY3Rpb24+PFF1ZXJ5IFR5cGU9IlRhYmxlUXVlcnkiIE5hbWU9Ikludm9pY2UiPjxUYWJsZSBOYW1lPSJJbnZvaWNlIj48Q29sdW1uIE5hbWU9IkNvbXBhbnlOYW1lIiAvPjxDb2x1bW4gTmFtZT0iQ29tcGFueUFkZHJlc3MxIiAvPjxDb2x1bW4gTmFtZT0iQ29tcGFueUFkZHJlc3MyIiAvPjxDb2x1bW4gTmFtZT0iVGF4SUQiIC8+PENvbHVtbiBOYW1lPSJJbnZvaWNlTm8iIC8+PENvbHVtbiBOYW1lPSJJbnZvaWNlRGF0ZSIgLz48Q29sdW1uIE5hbWU9IkNsaWVudE5hbWUiIC8+PENvbHVtbiBOYW1lPSJDbGllbnRBZGRyZXNzMSIgLz48Q29sdW1uIE5hbWU9IkNsaWVudEFkZHJlc3MyIiAvPjxDb2x1bW4gTmFtZT0iUmVmZXJlbmNlTm8iIC8+PENvbHVtbiBOYW1lPSJQYXltZW50VHlwZSIgLz48Q29sdW1uIE5hbWU9IlBheW1lbnREdWVEYXRlIiAvPjxDb2x1bW4gTmFtZT0iSW52b2ljZURldGFpbCIgLz48Q29sdW1uIE5hbWU9IkFtb3VudCIgLz48Q29sdW1uIE5hbWU9IlZBVFBlcmNlbnQiIC8+PENvbHVtbiBOYW1lPSJOZXRBbW91bnRUSCIgLz48Q29sdW1uIE5hbWU9IkF1dGhvcml6ZWROYW1lIiAvPjwvVGFibGU+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9IlNxbERhdGFTb3VyY2UxIj48VmlldyBOYW1lPSJJbnZvaWNlIj48RmllbGQgTmFtZT0iQ29tcGFueU5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ29tcGFueUFkZHJlc3MxIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNvbXBhbnlBZGRyZXNzMiIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJUYXhJRCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJJbnZvaWNlTm8iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iSW52b2ljZURhdGUiIFR5cGU9IkRhdGVUaW1lIiAvPjxGaWVsZCBOYW1lPSJDbGllbnROYW1lIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNsaWVudEFkZHJlc3MxIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkNsaWVudEFkZHJlc3MyIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlJlZmVyZW5jZU5vIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBheW1lbnRUeXBlIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBheW1lbnREdWVEYXRlIiBUeXBlPSJEYXRlVGltZSIgLz48RmllbGQgTmFtZT0iSW52b2ljZURldGFpbCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJBbW91bnQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9IlZBVFBlcmNlbnQiIFR5cGU9IkRlY2ltYWwiIC8+PEZpZWxkIE5hbWU9Ik5ldEFtb3VudFRIIiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IkF1dGhvcml6ZWROYW1lIiBUeXBlPSJTdHJpbmciIC8+PC9WaWV3PjwvRGF0YVNldD48L1Jlc3VsdFNjaGVtYT48L1NxbERhdGFTb3VyY2U+" />
+  </ComponentStorage>
+  <ObjectStorage>
+    <Item1 ObjectType="DevExpress.XtraReports.Serialization.ObjectStorageInfo, DevExpress.XtraReports.v14.2" Ref="179" Content="" Type="System.String" />
+  </ObjectStorage>
+</XtraReportsLayoutSerializer>

@@ -1,0 +1,8 @@
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Data\bin\Debug\Finsoft.PM.Data.dll
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Data\bin\Debug\Finsoft.PM.Data.pdb
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Data\bin\Debug\Finsoft.PM.Data.xml
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Data\obj\Debug\Finsoft.PM.Data.Resources.resources
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Data\obj\Debug\Finsoft.PM.Data.vbproj.GenerateResource.Cache
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Data\obj\Debug\Finsoft.PM.Data.dll
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Data\obj\Debug\Finsoft.PM.Data.xml
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Data\obj\Debug\Finsoft.PM.Data.pdb

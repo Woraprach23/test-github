@@ -1,0 +1,601 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2450DB31-D3B0-4652-809C-813465ED839A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Finsoft.PM.UI</RootNamespace>
+    <AssemblyName>Finsoft.PM.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <StartupObject>Finsoft.PM.Program</StartupObject>
+    <FileAlignment>512</FileAlignment>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup>
+    <MyType>WindowsForms</MyType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Finsoft.PM.UI.My.MyApplication</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v14.2">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v14.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v14.2.UI, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Images.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v14.2.Core, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v14.2.Core, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v14.2.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v14.2.Core, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v14.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.2.UI, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v14.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v14.2.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.Extensions, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v14.2.Wizard, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v14.2">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v14.2.Core, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraNavBar.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPivotGrid.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v14.2.Extensions, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraRichEdit.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraVerticalGrid.v14.2, Version=14.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Report\DesignerClosingCommandHandler.vb" />
+    <Compile Include="Controls\Report\ReportDesignForm.Designer.vb">
+      <DependentUpon>ReportDesignForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Report\ReportDesignForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Report\ReportLayoutForm.Designer.vb">
+      <DependentUpon>ReportLayoutForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Report\ReportLayoutForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Report\ReportLayoutFormView.Designer.vb">
+      <DependentUpon>ReportLayoutFormView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Report\ReportLayoutFormView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Report\XmlTextReader.vb" />
+    <Compile Include="Controls\Working\CRAddForm.Designer.vb">
+      <DependentUpon>CRAddForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Working\CRAddForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Working\CRGridView.Designer.vb">
+      <DependentUpon>CRGridView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Working\CRGridView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Working\FSDForm.Designer.vb">
+      <DependentUpon>FSDForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Working\FSDForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Working\FSDFormView.Designer.vb">
+      <DependentUpon>FSDFormView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Working\FSDFormView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Working\JobAddForm.Designer.vb">
+      <DependentUpon>JobAddForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Working\JobAddForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Working\JobForm.Designer.vb">
+      <DependentUpon>JobForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Working\JobForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Working\JobGridView.Designer.vb">
+      <DependentUpon>JobGridView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Working\JobGridView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Working\QuotationForm.Designer.vb">
+      <DependentUpon>QuotationForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Working\QuotationForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Working\QuotationFormView.Designer.vb">
+      <DependentUpon>QuotationFormView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Working\QuotationFormView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogIn.Designer.vb">
+      <DependentUpon>FormLogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.vb">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Master\AttachFileForm.Designer.vb">
+      <DependentUpon>AttachFileForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Master\AttachFileForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Master\AttachFileGridView.Designer.vb">
+      <DependentUpon>AttachFileGridView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Master\AttachFileGridView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SystemAdmin\ConfigFormView.Designer.vb">
+      <DependentUpon>ConfigFormView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SystemAdmin\ConfigFormView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SystemAdmin\UIPermissionView.Designer.vb">
+      <DependentUpon>UIPermissionView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SystemAdmin\UIPermissionView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SystemAdmin\UserForm.Designer.vb">
+      <DependentUpon>UserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SystemAdmin\UserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SystemAdmin\UserRoleForm.Designer.vb">
+      <DependentUpon>UserRoleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SystemAdmin\UserRoleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SystemAdmin\UserRoleFromView.Designer.vb">
+      <DependentUpon>UserRoleFromView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SystemAdmin\UserRoleFromView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SystemAdmin\UserFromView.Designer.vb">
+      <DependentUpon>UserFromView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SystemAdmin\UserFromView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Base\ControlBase.Designer.vb">
+      <DependentUpon>ControlBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Base\ControlBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Base\FormBase.Designer.vb">
+      <DependentUpon>FormBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Base\FormBase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Base\FormViewMaster.Designer.vb">
+      <DependentUpon>FormViewMaster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Base\FormViewMaster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Base\GridviewBase.Designer.vb">
+      <DependentUpon>GridviewBase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Base\GridviewBase.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Master\AddressForm.Designer.vb">
+      <DependentUpon>AddressForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Master\AddressForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Master\AddressGridView.Designer.vb">
+      <DependentUpon>AddressGridView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Master\AddressGridView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Master\ClientForm.Designer.vb">
+      <DependentUpon>ClientForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Master\ClientForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Master\ClientFromView.Designer.vb">
+      <DependentUpon>ClientFromView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Master\ClientFromView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Master\DoctypeForm.Designer.vb">
+      <DependentUpon>DoctypeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Master\DoctypeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Master\DoctypeFormView.Designer.vb">
+      <DependentUpon>DoctypeFormView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Master\DoctypeFormView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Master\DoctypeGridView.Designer.vb">
+      <DependentUpon>DoctypeGridView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Master\DoctypeGridView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Master\ProductForm.Designer.vb">
+      <DependentUpon>ProductForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Master\ProductForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Master\ProductFormView.Designer.vb">
+      <DependentUpon>ProductFormView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Master\ProductFormView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Master\ProductGridView.Designer.vb">
+      <DependentUpon>ProductGridView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Master\ProductGridView.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RepositoryLookup\CustomRepositoryLookupConfig.Designer.vb">
+      <DependentUpon>CustomRepositoryLookupConfig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RepositoryLookup\CustomRepositoryLookupConfig.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\RepositoryLookup\CustomRepositoryLookupUser.Designer.vb">
+      <DependentUpon>CustomRepositoryLookupUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RepositoryLookup\CustomRepositoryLookupUser.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\Working\ContractForm.Designer.vb">
+      <DependentUpon>ContractForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Working\ContractForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Working\ContractFormView.Designer.vb">
+      <DependentUpon>ContractFormView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Working\ContractFormView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Working\CRForm.Designer.vb">
+      <DependentUpon>CRForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Working\CRForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Working\CRFormView.Designer.vb">
+      <DependentUpon>CRFormView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Working\CRFormView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\Working\JobFormView.Designer.vb">
+      <DependentUpon>JobFormView.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Working\JobFormView.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModuleInitialize.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="PrintRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PrintRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.vb" />
+    <Compile Include="Utils\ControlManager.vb" />
+    <Compile Include="Utils\ControlValidator.vb" />
+    <Compile Include="Utils\DataHelper.vb" />
+    <Compile Include="Utils\FileManager.vb" />
+    <Compile Include="Utils\GridViewManager.vb" />
+    <Compile Include="Utils\LookupManager.vb" />
+    <Compile Include="Utils\MessageManager.vb" />
+    <Compile Include="Utils\ReportHelper.vb" />
+    <Compile Include="Utils\UserLayoutManager.vb" />
+    <Compile Include="XRDesignRibbonControllerResources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Controls\Report\ReportDesignForm.resx">
+      <DependentUpon>ReportDesignForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Report\ReportLayoutForm.resx">
+      <DependentUpon>ReportLayoutForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Report\ReportLayoutFormView.resx">
+      <DependentUpon>ReportLayoutFormView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Working\CRAddForm.resx">
+      <DependentUpon>CRAddForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Working\CRGridView.resx">
+      <DependentUpon>CRGridView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Working\FSDForm.resx">
+      <DependentUpon>FSDForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Working\FSDFormView.resx">
+      <DependentUpon>FSDFormView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Working\JobAddForm.resx">
+      <DependentUpon>JobAddForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Working\JobForm.resx">
+      <DependentUpon>JobForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Working\JobGridView.resx">
+      <DependentUpon>JobGridView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Working\QuotationForm.resx">
+      <DependentUpon>QuotationForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Working\QuotationFormView.resx">
+      <DependentUpon>QuotationFormView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogIn.resx">
+      <DependentUpon>FormLogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Master\AttachFileForm.resx">
+      <DependentUpon>AttachFileForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Master\AttachFileGridView.resx">
+      <DependentUpon>AttachFileGridView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SystemAdmin\ConfigFormView.resx">
+      <DependentUpon>ConfigFormView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SystemAdmin\UIPermissionView.resx">
+      <DependentUpon>UIPermissionView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SystemAdmin\UserForm.resx">
+      <DependentUpon>UserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SystemAdmin\UserRoleForm.resx">
+      <DependentUpon>UserRoleForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SystemAdmin\UserRoleFromView.resx">
+      <DependentUpon>UserRoleFromView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SystemAdmin\UserFromView.resx">
+      <DependentUpon>UserFromView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Base\ControlBase.resx">
+      <DependentUpon>ControlBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Base\FormBase.resx">
+      <DependentUpon>FormBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Base\FormViewMaster.resx">
+      <DependentUpon>FormViewMaster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Base\GridviewBase.resx">
+      <DependentUpon>GridviewBase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Master\AddressForm.resx">
+      <DependentUpon>AddressForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Master\AddressGridView.resx">
+      <DependentUpon>AddressGridView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Master\ClientForm.resx">
+      <DependentUpon>ClientForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Master\ClientFromView.resx">
+      <DependentUpon>ClientFromView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Master\DoctypeForm.resx">
+      <DependentUpon>DoctypeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Master\DoctypeFormView.resx">
+      <DependentUpon>DoctypeFormView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Master\DoctypeGridView.resx">
+      <DependentUpon>DoctypeGridView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Master\ProductForm.resx">
+      <DependentUpon>ProductForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Master\ProductFormView.resx">
+      <DependentUpon>ProductFormView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Master\ProductGridView.resx">
+      <DependentUpon>ProductGridView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Working\ContractForm.resx">
+      <DependentUpon>ContractForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Working\ContractFormView.resx">
+      <DependentUpon>ContractFormView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Working\CRForm.resx">
+      <DependentUpon>CRForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Working\CRFormView.resx">
+      <DependentUpon>CRFormView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Working\JobFormView.resx">
+      <DependentUpon>JobFormView.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PrintRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>PrintRibbonControllerResources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>XRDesignRibbonControllerResources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <Content Include="NCR_Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Finsoft.PM.Common\Finsoft.PM.Common.vbproj">
+      <Project>{41dfaa2e-b7ec-43a7-96ae-23ac4f15ccfa}</Project>
+      <Name>Finsoft.PM.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Finsoft.PM.Data\Finsoft.PM.Data.vbproj">
+      <Project>{44f85fa7-5a74-4195-84c8-0ff92897f722}</Project>
+      <Name>Finsoft.PM.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

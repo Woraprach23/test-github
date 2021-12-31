@@ -1,0 +1,12 @@
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Common\bin\Debug\Finsoft.PM.Common.dll
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Common\bin\Debug\Finsoft.PM.Common.pdb
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Common\bin\Debug\Finsoft.PM.Common.xml
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Common\bin\Debug\Finsoft.PM.Data.dll
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Common\bin\Debug\Finsoft.PM.Data.pdb
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Common\bin\Debug\Finsoft.PM.Data.xml
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Common\obj\Debug\Finsoft.PM.Common.vbprojResolveAssemblyReference.cache
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Common\obj\Debug\Finsoft.PM.Common.Resources.resources
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Common\obj\Debug\Finsoft.PM.Common.vbproj.GenerateResource.Cache
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Common\obj\Debug\Finsoft.PM.Common.dll
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Common\obj\Debug\Finsoft.PM.Common.xml
+D:\SourceControl\FinsoftPM\FinsoftPM\Finsoft.PM.Common\obj\Debug\Finsoft.PM.Common.pdb

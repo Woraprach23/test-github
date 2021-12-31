@@ -1,0 +1,58 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Finsoft.PM.Data
+</name>
+</assembly>
+<members>
+<member name="P:Finsoft.PM.Data.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Finsoft.PM.Data.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Finsoft.PM.Data.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:Finsoft.PM.Data.DBProc.ExecuteDataset(System.String)">
+	<summary>
+ Execute sql command which return dataset or data table
+ </summary>
+ TODO: Add Exception handling !!?? check if no data then dataset is nothing, null or empty ?
+
+</member><member name="M:Finsoft.PM.Data.DBProc.ExecuteNonQuery(System.String)">
+	<summary>
+ Execute sql command that doesn't return value
+ </summary>
+</member><member name="M:Finsoft.PM.Data.DBProc.ExecuteScalar(System.String)">
+	<summary>
+ Execute sql command that return single value
+ </summary>
+</member><member name="F:Finsoft.PM.Data.MasterFile.pt_PrimaryKeyID">
+	<summary>
+ Common variable for all Master file class
+ </summary>
+</member><member name="M:Finsoft.PM.Data.MasterFile.Mapping(System.Data.SqlClient.SqlDataReader@)">
+	<summary>
+ Copy Data from SqlDataReader to Properties
+ </summary>
+</member><member name="M:Finsoft.PM.Data.MasterFile.Mapping(System.Data.DataRow@)">
+	<summary>
+ Copy Data from DataRow to Properties
+ </summary>
+</member><member name="M:Finsoft.PM.Data.MasterFile.LoadDataClassToRow(System.Data.DataRow@)">
+	<summary>
+ Copy Data from Properties to DataRow
+ </summary>
+</member><member name="M:Finsoft.PM.Data.MasterFile.SetParameters(System.Data.SqlClient.SqlCommand@)">
+	<summary>
+ SetParameters  to SqlCommand from Properties
+ </summary>
+</member>
+</members>
+</doc>
